@@ -1,5 +1,7 @@
 :root {
   /* Global variables to be defined here */
+   --color-green:#34c94B;
+   --color-black:#121212;
    --color-white: #ffffff; 
 }
 
