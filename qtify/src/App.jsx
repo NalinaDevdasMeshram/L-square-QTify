@@ -1,5 +1,8 @@
+import Navbars from "./component/Navbars/Navbar";
 export default function App() {
   return (
-    <div>App</div>
+    <div className="App">
+      <Navbars/>
+    </div>
   )
 }
