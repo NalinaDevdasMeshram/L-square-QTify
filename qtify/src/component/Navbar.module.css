@@ -1,5 +1,6 @@
-header{
-    background-color: #34c94b;
+.navbar{
+    background-color : var(--color-primary);
     width:150px;
     height: 74px;
+    padding:5px;
 }
