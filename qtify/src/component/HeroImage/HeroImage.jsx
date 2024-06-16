@@ -8,7 +8,7 @@ const HeroImage = () =>{
         <Box className={styles.Container}>
         <img className={styles.imgSrc} src={heroImage} alt="iamge"/>
         <Box className={styles.TextContainer}>
-          <h2 className={styles.Text1}>100 Thousand Songs,ad-free</h2>
+          <h2 className={styles.Text1}>100 Thousand Songs, ad-free</h2>
           <h2 className={styles.Text}>Over thousands podcast episcode</h2>
         </Box>
         </Box>
