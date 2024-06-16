@@ -1,0 +1,12 @@
+.btn{
+    background-color:var(--color-secondary);
+     color: var(--color-primary); 
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+ }
