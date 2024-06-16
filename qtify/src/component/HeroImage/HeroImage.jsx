@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 const HeroImage = () =>{
  return (
     <div className={styles.HeroImage}>
+      
         <Box className={styles.Container}>
         <img className={styles.imgSrc} src={heroImage} alt="iamge"/>
         <Box className={styles.TextContainer}>
