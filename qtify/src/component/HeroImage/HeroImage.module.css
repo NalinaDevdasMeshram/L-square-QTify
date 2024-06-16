@@ -1,0 +1,51 @@
+.HeroImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: var(--color-secondary);
+ width: 100vw;
+ height: 270px;
+ top:74px;
+ 
+}
+
+.Container{
+    color:var(--color-white);
+    width: 799px;
+    height: 212px;
+    left:327px;
+    top:103px; 
+    
+    text-align: center;
+}
+
+.imgSrc{
+    position: absolute;
+    width:212px;
+    height:212px;
+    top: 103px;
+    left: 930px; 
+}
+
+.TextContainer{
+margin-top: 45px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 48px;
+letter-spacing: 0.75px;
+
+}
+.Text1{
+    width: 556px;
+   height: 48px;
+   top: 180px;
+   left: 340px; 
+}
+.Text{
+    width: 556px;
+    height: 48px;
+    top: 223px;
+    left: 327px; 
+}

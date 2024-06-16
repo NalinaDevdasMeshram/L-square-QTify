@@ -9,4 +9,11 @@
     padding: 2px 5px;
     border-radius: 8px;
     cursor: pointer;
+    letter-spacing:0.25px;
+    font-family: 'Poppins';
+   font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+
  }
