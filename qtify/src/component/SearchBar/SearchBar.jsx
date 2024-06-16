@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import styles from './SearchBar.module.css';
 import InputBase from '@mui/material/InputBase';
 // import IconButton from '@mui/material/IconButton';
+import search from '../../assets/search-icon.svg';
 const SearchBar =()=>{
     
  return(
@@ -12,7 +13,7 @@ const SearchBar =()=>{
     />
      <button className={styles.textSrc}>
      <img   
-      src='/src/assets/search-icon.svg' 
+      src={search}
       alt='search'
       /> 
   </button>
