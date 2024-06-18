@@ -1,0 +1,60 @@
+
+
+.MainContainer{
+    width: 98vw;
+    height: 592px;
+    top:368px;
+    left: 31px;
+    gap:32px; 
+     
+} 
+ h5{
+    width: 122px;
+    height: 30px;
+    margin-left: 2px;
+    font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 30px;
+}
+.CardContainer{
+ border: 1px solid red;
+ width: 159px;
+ height: 230px;
+ margin-left: 10px;
+  gap: 6px; 
+  border-radius:10px 10px 0 0; 
+ } 
+  .subContainer{
+    
+    width: 97vw;
+    height: 235px;
+    margin: 0 5px;
+    border: 1px solid red;
+ }
+.innerContainer{
+    width: 159px;
+    height: 205px;
+    overflow: hidden;
+}
+.btn{
+    background-color:var(--color-secondary);
+    color:var(--color-white);
+    width: 100px;
+    height: 35px;
+    top: 176px;
+    margin-left: 4px;
+   border-radius: 20px;
+   padding: 4px;
+}
+.text{
+width: 105px;
+height: 21px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: #FFFFFF;
+} 

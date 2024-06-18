@@ -20,6 +20,8 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+ background-color:var(--color-secondary);
+    color:var(--color-white);
 }
 img,
 picture,
