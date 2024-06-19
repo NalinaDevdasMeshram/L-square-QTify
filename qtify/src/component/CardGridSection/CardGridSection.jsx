@@ -1,13 +1,12 @@
 /* eslint-disable react/prop-types */
 import { CircularProgress } from "@mui/material";
 import Card from "../Card/Card";
-import Carousel from "../Carousel/Carousel";
-import { useState } from "react";
+ import Carousel from "../Carousel/Carousel";
+ import { useState } from "react";
 import styles from "./CardGridSection.module.css";
-
-const CardGridSection=({data, title})=>{
- const [carouselToggle, SetCarouselToggle] = useState(true);
- const handleToggle =()=>{
+const CardGridSection=({ data, title})=>{
+const [carouselToggle, SetCarouselToggle] = useState(true);
+const handleToggle =()=>{
   SetCarouselToggle(!carouselToggle);
  }
   return(
