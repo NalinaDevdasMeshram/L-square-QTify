@@ -20,8 +20,9 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
- background-color:var(--color-secondary);
-    color:var(--color-white);
+   background-color:var(--color-secondary); 
+     color:var(--color-white);
+     overflow-x: hidden;
 }
 img,
 picture,
@@ -37,7 +38,7 @@ textarea,
 select {
   font: inherit;
 }
-p,
+/* p,
 h1,
 h2,
 h3,
@@ -49,4 +50,4 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
-}
+} */

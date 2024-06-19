@@ -1,17 +1,28 @@
+import { useEffect, useState } from "react";
+import CardGridSection from "./component/CardGridSection/CardGridSection";
 import HeroImage from "./component/HeroImage/HeroImage";
  import Navbars from "./component/Navbars/Navbar";
- import Cards from "./component/Card/Cards";
+  import {fetchTopAlbums} from './component/Api/ApiCall';
+ 
+ 
 
-  // eslint-disable-next-line react-refresh/only-export-components
-  // export const config = {
-  //    endpoint :`https://qtify-backend-labs.crio.do/albums/top`,
-  // };
-export default function App() {
+  
+ function App() {
+ const [topAlbums, setTopAlbums] = useState([])
+  const generateData = async()=>{
+     setTopAlbums(await fetchTopAlbums());
+  }
+  useEffect(()=>{
+    generateData;
+  },[])
   return (
     <div className="App">
        <Navbars/> 
       <HeroImage/>
-      <Cards/>
+      <div style={{marginBottom: '30px'}}>
+        <CardGridSection data={topAlbums} title="Top Albums" />
+      </div>
     </div>
   )
 }
+export default App;

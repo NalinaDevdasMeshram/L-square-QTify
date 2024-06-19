@@ -1,18 +1,17 @@
+ import axios from 'axios'
+ const BACKEND_ENDPOINT = `https://qtify-backend-labs.crio.do`;
+ const  fetchTopAlbums = async()=>{
+try{
+    const response = await axios.get(`${BACKEND_ENDPOINT}/albums/top`);
+    console.log('Api response', response);
+    return response.data;
 
-// import { config } from "../../App";
-// import { useEffect } from "react";
-// const ApiCall = async(getData)=>{
-//     // const[error, setError] = useState(null);
-//     try{
-//         const response = await getData(`${config.endpoint}`)
-//         console.log(response) 
-//         return response; 
-//     }
-//     catch(e){
-//         console.log("something went wrong please try again");
-//     }
-// }
-
-//  useEffect(()=>{
-//      ApiCall();
-//  },[])
+ }
+  catch(e){
+    console.log("something went wrong", e)
+    return [];
+  }
+ 
+ };
+ 
+ export{ fetchTopAlbums}
