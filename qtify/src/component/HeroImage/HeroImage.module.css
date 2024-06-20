@@ -3,17 +3,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
    height: 270px; 
-  
   gap:30px;
-  font-family: 'Poppins';
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
 font-size: 25px;
 line-height: 48px;
 letter-spacing: 0.75px;
-  
- }
-
+}
+.text{
+  /* width: 473px; */
+  margin-left:40px;
+  border-radius: 5px solid red;
+}
  

@@ -7,7 +7,7 @@ const HeroImage = () =>{
  return (
     <div className={styles.HeroImage} >
       <div>
-        <h2>100 Thousand Songs, ad-free</h2>
+        <h2 className={styles.text}>100 Thousand Songs, ad-free</h2>
         <h2>Over thousands podcast episcode</h2>
         </div>
         <div>
