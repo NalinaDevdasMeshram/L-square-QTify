@@ -29,8 +29,7 @@
         background-color:var(--color-secondary);
         color: var(--color-white);
         cursor: pointer;
-        
-    }
+        }
   }
 
   .titleWrapper {

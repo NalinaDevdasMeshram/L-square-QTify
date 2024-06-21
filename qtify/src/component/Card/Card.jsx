@@ -7,7 +7,7 @@ const Card =({data, type})=>{
          case 'albums':{
             const {image, follows, title, songs} = data;
             return(
-                <Tooltip title={`${songs.length} songs`} placement='top' arrow>
+                <Tooltip title={`${songs?.length || 0} songs`} placement='top' arrow>
                     <div className={styles.card}>
                         <div className={styles.imgSrc}>
                         <img src={image} alt='albums'/>
@@ -20,7 +20,7 @@ const Card =({data, type})=>{
                          </div>
                     </div>
                 </Tooltip>
-            )
+             )
 
          }
          case 'song':{

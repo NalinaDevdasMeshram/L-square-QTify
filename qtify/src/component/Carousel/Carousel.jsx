@@ -7,24 +7,25 @@ import LeftNavigation from "./LeftNavigation";
 import RightNavigation from "./RightNavigation";
 const Carousel =({data, componentRender}) => {
      const Controls =({data})=>{
-     const swiper = useSwiper(data, componentRender);
-    
-     useEffect(()=>{
-        swiper.slideTo(0, null)
+     const swiper = useSwiper();// inbuild hook 
+    useEffect(()=>{
+        swiper.slideTo(0)
      // eslint-disable-next-line react-hooks/exhaustive-deps
      }, [data]);
+     return null // control component does not render anything 
      }
-    console .log("data", data)
-    console.log("componentRender", componentRender)
+    // console .log("data", data)
+    // console.log("componentRender", componentRender)
     return(
         <div className={styles.wrapper}>
-        <Swiper  className={styles.swiperwrapper}
+        <Swiper className={styles.swiperwrapper}
         style={{padding:'0px 10px'}}
-         initialSlide={0} 
-         slidesPerView={7} 
+        initialSlide={0} 
+         slidesPerView={8} 
          spaceBetween ={40} 
-          allowTouchMove  
+         allowTouchMove  
        > 
+       {/* <Controls/>  */}
        <Controls data={data}/>
        <LeftNavigation/>
        <RightNavigation/>

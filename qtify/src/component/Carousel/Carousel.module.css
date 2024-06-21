@@ -1,21 +1,7 @@
 .wrapper {
       position: relative; 
-     /* width: 100%;
-     overflow: hidden; */
+    
 }
-
-/* .swiperwrapper {
-     display: flex;
-     flex-wrap: wrap;
-     gap: 40;
-   }
-
-.SwiperSlide{
- display: flex;
- justify-content: center;
- align-items: center;
-  width: auto;
-} */
 
 .rightNavigation {
      cursor: pointer;
@@ -33,7 +19,7 @@
      top: 40%;
      transform: translateY(-50%);
      z-index: 10;
-     /* border-radius: 2px solid red; */
+     
  }
    
    

@@ -5,9 +5,10 @@ import styles from './Section.module.css';
 import  Card from '../Card/Card';
 import { CircularProgress } from "@mui/material";
 const Section =({data, title})=>{
-     console.log("debugging data", data);
-     console.log("debegging title", title);
+    //  console.log("debugging data", data);
+    //  console.log("debegging title", title);
       const [toggleData, setToggleData] = useState(true)
+      //  console.log('toggleData', toggleData)
       const handletoggleData =()=>{
       setToggleData(!toggleData)
       };
@@ -15,24 +16,25 @@ const Section =({data, title})=>{
      <div>
         <div className={styles.header}>
         <h4>{title}</h4>
-        {title && 
+        {title && (
         <h4 className={styles.toggleData} onClick={handletoggleData}>
         {toggleData ? 'Show All' : 'Collapse All'}
-        </h4>}
+        </h4>
+      )}
       </div>
        {
-        !data?.length?
+        !data?.length?(
             <CircularProgress/>
-        :(
+        ):(
             <div className={styles.cardWrapper}>
-            {!toggleData ?
+            {!toggleData ?(
               
                 <div className={styles.wrapper}>
-                  {data.map((item)=>
+                  {data.map((item)=>(
                     <Card key={item.id} data={item} type='album'/>
-                    )}
+                    ))}
                 </div>
-              :(
+              ):(
                 <Carousel 
               data ={data}
             componentRender ={(ele)=><Card data={ele} type='albums'/>}
