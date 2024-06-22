@@ -16,30 +16,30 @@ const Section =({data, title})=>{
      <div>
         <div className={styles.header}>
         <h4>{title}</h4>
-        {title && (
+        {title && 
         <h4 className={styles.toggleData} onClick={handletoggleData}>
         {toggleData ? 'Show All' : 'Collapse All'}
         </h4>
-      )}
+      }
       </div>
        {
-        !data?.length?(
+        !data?.length?
             <CircularProgress/>
-        ):(
+        :(
             <div className={styles.cardWrapper}>
-            {!toggleData ?(
+            {!toggleData ?
               
                 <div className={styles.wrapper}>
-                  {data.map((item)=>(
+                  {data.map((item)=>
                     <Card key={item.id} data={item} type='album'/>
-                    ))}
+                    )}
                 </div>
-              ):(
+              :
                 <Carousel 
               data ={data}
-            componentRender ={(ele)=><Card data={ele} type='albums'/>}
+            componentRender ={(ele)=><Card data={ele} type='album'/>}
           />
-              )}
+              }
             </div>
         )}
     </div>

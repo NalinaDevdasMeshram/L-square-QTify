@@ -7,13 +7,9 @@ const RightNavigation =()=>{
  const [isEnd, setIsEnd] = useState(swiper.isEnd);
 
  useEffect(()=>{
-    const handleRightChange =()=>{
-        setIsEnd(swiper.isEnd)
-    }
-    swiper.on('slideChange', handleRightChange)
-  return ()=>{
-    swiper.off('slideChange', handleRightChange)
-  }
+   swiper.on('slideChange', function(){
+    setIsEnd(swiper.isEnd)
+   })
 },[swiper])
 return(
     <div className={styles.rightNavigation}>

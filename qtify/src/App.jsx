@@ -1,13 +1,23 @@
  import styles from './App.module.css';
+ import { ThemeProvider, createTheme } from '@mui/material/styles';
  import HeroImage from "./component/HeroImage/HeroImage";
  import Navbars from "./component/Navbars/Navbar";
  import { useEffect, useState } from "react";
  import { fetchTopAlbums, fetchNewAlbum, fetchgenres, fetchSongs} from "./component/Api/ApiCall";
 import Section from "./component/Section/Section";
 import GenresSection from './component/GenresSection/GenresSection'
-import FAQs from './component/FAQs/FAQs';
+
+ import FAQs from './component/FAQs/FAQs';
+import SongSection from './component/SongSection/SongSection';
 
 function App() {
+   const theme = createTheme({
+    palette: {
+      primary: {
+        main: '#34c94B;',
+      },
+    },
+  });
   const [topAlbums, setTopAlbums] = useState([]);
    const [newAlbums, setNewAlbums] = useState([]);
    const [songs, setSongs] = useState([]);
@@ -32,6 +42,7 @@ function App() {
    },[])
   return (
     <div className="App">
+      <ThemeProvider theme={theme}>
       <Navbars/> 
       <HeroImage/>
       <div style={{marginBottom: '30px'}}>
@@ -51,6 +62,11 @@ function App() {
       <hr className={styles.partitionLine}/>
       </div>
       <FAQs/>
+      <div>
+      <hr className={styles.partition}/>
+      </div>
+      <SongSection/>
+      </ThemeProvider>
       </div>
   )
 }

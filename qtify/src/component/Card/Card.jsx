@@ -4,13 +4,13 @@ import { Chip,Tooltip } from '@mui/material';
 const Card =({data, type})=>{
  const getCard =(type)=>{
     switch(type){
-         case 'albums':{
+         case 'album':{
             const {image, follows, title, songs} = data;
             return(
-                <Tooltip title={`${songs?.length || 0} songs`} placement='top' arrow>
+                <Tooltip title={`${songs?.length||0}songs`} placement='top' arrow>
                     <div className={styles.card}>
                         <div className={styles.imgSrc}>
-                        <img src={image} alt='albums'/>
+                        <img src={image} alt='album cover'/>
                         <div className={styles.banner}>
                          <Chip className={styles.Chip} label={`${follows} Follows`} size='small'/>
                           </div>
@@ -24,7 +24,7 @@ const Card =({data, type})=>{
 
          }
          case 'song':{
-             const{image, likes, title} = data;
+             const {image, likes, title} = data;
              return(
                 <div className={styles.card}>
                 <div className={styles.imgSrc}>

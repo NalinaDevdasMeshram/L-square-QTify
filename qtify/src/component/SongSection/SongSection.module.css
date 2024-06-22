@@ -1,0 +1,21 @@
+.songWrapper{
+    
+    width:1450px;
+    padding: 0px 0px 200px 200px;
+    height: 130px;
+    top:1777px;
+    border: 2px solid red
+    
+
+}
+.btn{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    top: 207px;
+    left: 696px;
+    color:var(--color-secondary);
+}
