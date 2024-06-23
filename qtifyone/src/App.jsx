@@ -6,6 +6,7 @@ import HeroImage from "./component/HeroImage/HeroImage";
  import Card from "./component/Card/Card";
  import GenreSection from "./component/GenreSection/GenreSection";
   import {fetchTopAlbums, fetchNewAlbums, genres, fetchSongs} from './component/Api/ApiCall';
+import { ThemeProvider } from "@mui/material";
   function App() {
    const [topAlbums, setTopAlbums] = useState([]);
    const [newAlbums, setNewAlbums] = useState([]);
@@ -31,6 +32,7 @@ import HeroImage from "./component/HeroImage/HeroImage";
   },[])
   return (
     <div className="App">
+      <ThemeProvider>
        <Navbars/> 
       <HeroImage/>
       <Card/>
@@ -49,6 +51,7 @@ import HeroImage from "./component/HeroImage/HeroImage";
       <div style={{marginBottom: '30px'}}>
       <CardGridSection data={songsData} title="songs"/>
       </div>
+      </ThemeProvider>
     </div>
   )
 }
