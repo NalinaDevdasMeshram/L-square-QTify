@@ -15,7 +15,7 @@ const LeftNavigation = () =>{
   return(
  <div className={styles.leftNavigation}>
  {
-   !isBeginning && <img src ={LeftArrow} alt="left arrow" onClick={()=>swiper.slidePrev()}/>
+   ! isBeginning && <img src ={LeftArrow} alt="left arrow" onClick={()=>swiper.slidePrev()}/>
  }
  </div>
   );

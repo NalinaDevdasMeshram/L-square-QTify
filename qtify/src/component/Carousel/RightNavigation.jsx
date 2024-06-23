@@ -13,7 +13,9 @@ const RightNavigation =()=>{
 },[swiper])
 return(
     <div className={styles.rightNavigation}>
-       {!isEnd && < img src ={RightArrow} alt= "RightArrow"  onClick={()=>swiper.slideNext()}/>}
+       {
+        !isEnd && < img src ={RightArrow} alt= "RightArrow"  onClick={()=>swiper.slideNext()}/>
+       }
     </div>
 )
 }

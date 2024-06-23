@@ -65,7 +65,7 @@ function App() {
       <div>
       <hr className={styles.partition}/>
       </div>
-      <SongSection/>
+      <SongSection data={songs}/>
       </ThemeProvider>
       </div>
   )
