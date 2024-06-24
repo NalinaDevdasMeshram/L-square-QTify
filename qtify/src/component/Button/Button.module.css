@@ -15,5 +15,75 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
+}
+.feedbackForm{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px;
+   } 
+   .remove{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+   }
+
+.cardWrapper{
+   padding: 50px;
+    position: relative;
+    background-color: var(--color-white);
+    color:var(--color-secondary);
+    width:40%;
+    box-shadow: 0 4px 8px rgba(174, 159, 159, 0.1);
+    max-width: 500px;
+    border-radius: 15px;
  }
+.textname{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.textname input, .textname textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #34c94B;
+}
+.textname textarea{
+    height: 100px;
+}
+.submitbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 2px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing:0.25px;
+    font-family: 'Poppins';
+    border:none ;
+    font-style: normal;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 27px;
+}
