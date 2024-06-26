@@ -18,11 +18,11 @@ import TabPanel from '@mui/lab/TabPanel';
         setValue(newValue);
     }
     useEffect(()=>{
-        console.log('original data', data)
-        console.log('selected genre key', value)
+        // console.log('original data', data)
+        // console.log('selected genre key', value)
         const filteredData = GenresType(data, value);
         setSongData(GenresType(data, value))
-        console.log('Filtered data:', filteredData);
+        // console.log('Filtered data:', filteredData);
         setSongData(filteredData);
     },[data, value])
  return(

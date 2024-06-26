@@ -30,7 +30,7 @@ function App() {
     // console.log(newAlbumsData)
      setNewAlbums(newAlbumsData);
       const genresres = await fetchgenres();
-      console.log('genresres', genresres); // store the list to genresres variable 
+      // console.log('genresres', genresres); // store the list to genresres variable 
       setGenreList(genresres)
    const songsAlbums = await fetchSongs();
     // console.log('songsAlbums', songsAlbums)
